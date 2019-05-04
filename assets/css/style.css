@@ -1,0 +1,237 @@
+/* ALIGNING THE LOGO */
+.header3 .navbar-default .navbar-brand{
+  padding-top: 8px;
+}
+
+.header3{
+  min-height: 100px;
+}
+
+/* COMMENTS */
+.commentlist{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+.commentlist .comment{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.commentlist .comment .reply a[href]{
+  border: #007acc solid 1px;
+  border-radius: 2px;
+  color: #007acc;
+  padding: 5px 15px;
+}
+.commentlist p{
+  margin-bottom: 25px;
+}
+.comment-meta{
+  font-size: 85%;
+  color: #777;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#comments, .comment-reply-title{
+  border-top: 4px solid #1a1a1a;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.comment-notes, .comment-awaiting-moderation, .logged-in-as, .form-allowed-tags{
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.comment-form{
+  padding-top: 20px;
+  max-width: 600px;
+}
+
+.comment-form label{
+  display: block;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.comment-form p{
+  margin-bottom: 30px;
+}
+
+.comment-form .comment-form-cookies-consent{
+  display: none;
+}
+
+.comment-form textarea{
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.comment-form input[type=text]{
+  width: 100%;
+}
+
+.comment-form input[type=submit]{
+  background: #1a1a1a;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+/* SINGLE POST STYLES */
+.single article{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.single .entry-header h1{
+  font-size: 48px;
+  font-weight: bold;
+}
+.single .entry-summary{
+  font-size:  30px;
+  line-height: 1;
+  margin-bottom: 50px;
+  color: #777;
+}
+.single .post-thumbnail{
+  margin-bottom: 40px;
+}
+.single .entry-content p{
+  margin-bottom: 25px;
+}
+.single .entry-author{
+  margin-top: 100px;
+  border: #eee solid 1px;
+  padding: 20px;
+  border-radius: 2px;
+}
+.single .entry-author h1{
+  text-transform: uppercase;
+  border-bottom: #eee solid 1px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+.single .entry-author .author-info{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 20px;
+}
+.single .entry-author .author-info h3{
+  margin-top: 0;
+}
+.single .entry-comments{
+  margin-top: 60px;
+}
+
+.single article img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* USERS GRID */
+.users-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.users-grid li{
+  border: #eee solid 1px;
+  text-align: center;
+  padding: 20px;
+}
+.users-grid li .orbit-user-name, .users-grid li .orbit-user-desc{
+  padding: 10px;
+}
+
+.users-grid li .orbit-user-desc{
+  border-top: #eee solid 1px;
+  font-size: 85%;
+  color: #777;
+}
+
+/* ORBIT ARTICLES */
+@media( min-width: 769px ){
+  .articles-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    display: grid;
+  }
+  .articles-grid .orbit-article{
+    border: #eee solid 1px;
+  }
+  .single .entry-content{
+    font-size: 22px;
+  }
+}
+
+.articles-list .orbit-article{
+  grid-template-columns: 150px 1fr;
+  grid-gap: 20px;
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.orbit-article .avatar{
+  border-radius: 50%;
+}
+
+.articles-list .orbit-post-content{
+  padding: 0;
+}
+
+.articles-theme .orbit-post-content h3{
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.articles-theme .orbit-author-meta{
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media (max-width: 768px){
+  .users-grid{
+    grid-template-columns: 1fr;
+  }
+  .articles-theme .orbit-article{
+    grid-template-columns: 80px 1fr;
+    grid-gap: 10px;
+    display: grid;
+  }
+
+  .articles-theme .orbit-thumbnail-bg{
+    min-height: 80px;
+  }
+
+  .articles-theme .orbit-post-content{
+    padding: 0;
+  }
+
+  .articles-theme .orbit-post-content h3{
+    font-size: 20px;
+
+  }
+
+  .articles-theme .orbit-author{
+    grid-template-columns: 0 1fr;
+  }
+  .articles-theme .avatar, .articles-theme .post-excerpt, .articles-theme .orbit-read-more{
+    display: none;
+  }
+  .articles-grid .orbit-article{
+    margin-bottom: 30px;
+  }
+
+  .single .entry-header h1{
+    font-size: 36px;
+  }
+
+  .single .entry-summary{
+    font-size:24px;
+
+  }
+}
