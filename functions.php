@@ -46,3 +46,13 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 
 	return $post_types;
 } );
+
+
+add_action( 'sp_pre_footer', function(){
+  ?>
+  <div class="site-info">
+    <span class="site-title"><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></span>
+    <a href="https://sputznik.com">Designed by Sputznik</a>
+  </div>
+  <?php
+} );

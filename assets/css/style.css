@@ -22,6 +22,21 @@
   padding: 5px 10px;
 }
 
+/* SITE TITLE IN THE FOOTER */
+.site-info{
+  padding: 20px 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.site-info .site-title:after{
+  content: "\002f";
+  display: inline-block;
+  padding: 0 .307692308em 0 .538461538em;
+}
+.site-info a{
+  color: #686868;
+}
+
 /* COMMENTS */
 .commentlist{
   list-style: none;
