@@ -81,7 +81,7 @@ add_action( 'widgets_init', function(){
 
 add_action( 'sp_pre_footer', function(){
   ?>
-  <div class="row" style="margin-top:30px;">
+  <div class="row" style="margin-top:50px;">
     <div class="col-sm-4"><?php if( is_active_sidebar( 'footer1-sidebar' ) ){ dynamic_sidebar( 'footer1-sidebar' ); }?></div>
     <div class="col-sm-4"><?php if( is_active_sidebar( 'footer2-sidebar' ) ){ dynamic_sidebar( 'footer2-sidebar' ); }?></div>
     <div class="col-sm-4"><?php if( is_active_sidebar( 'footer3-sidebar' ) ){ dynamic_sidebar( 'footer3-sidebar' ); }?></div>
