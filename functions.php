@@ -47,9 +47,45 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 	return $post_types;
 } );
 
+add_action( 'widgets_init', function(){
+
+  register_sidebar( array(
+    'name' => 'Footer Sidebar 1',
+    'id' => 'footer1-sidebar',
+    'description' => 'Appears in the footer area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
+
+  register_sidebar( array(
+    'name' => 'Footer Sidebar 2',
+    'id' => 'footer2-sidebar',
+    'description' => 'Appears in the footer area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
+  register_sidebar( array(
+    'name' => 'Footer Sidebar 3',
+    'id' => 'footer3-sidebar',
+    'description' => 'Appears in the footer area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
+});
 
 add_action( 'sp_pre_footer', function(){
   ?>
+  <div class="row">
+    <div class="col-sm-4"><?php if( is_active_sidebar( 'footer1-sidebar' ) ){ dynamic_sidebar( 'footer1-sidebar' ); }?></div>
+    <div class="col-sm-4"><?php if( is_active_sidebar( 'footer2-sidebar' ) ){ dynamic_sidebar( 'footer2-sidebar' ); }?></div>
+    <div class="col-sm-4"><?php if( is_active_sidebar( 'footer3-sidebar' ) ){ dynamic_sidebar( 'footer3-sidebar' ); }?></div>
+  </div>
   <div class="site-info">
     <span class="site-title"><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></span>
     <a href="https://sputznik.com">Designed by Sputznik</a>
