@@ -257,7 +257,7 @@
 }
 
 .articles-theme .orbit-post-content h3{
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -307,4 +307,75 @@
     font-size:24px;
 
   }
+}
+
+
+.church-list .orbit-article-db{
+	display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-gap: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: #ddd solid 1px;
+  border-radius: 2px;
+}
+
+.church-list .orbit-article-db h3{
+  margin-top: 0;
+}
+
+[data-behaviour~=oq-ajax-loading]{
+  background: #000;
+  border: #000 solid 1px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 10px 15px;
+
+}
+@media( min-width: 768px ){
+  [data-behaviour~=oq-ajax-loading]{
+  	margin: 10px 0 20px;
+  }
+}
+
+h3{ font-weight: bold; }
+
+.single article{
+  max-width: 700px;
+}
+
+.single article .entry-content h3{
+	margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.single article .entry-content h4{
+	font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.single .entry-author{
+	border: none;
+  padding: 20px 0;
+  border-radius: 0;
+  border-top: #1a1a1a solid 4px;
+}
+
+.single .entry-author h1{
+	text-transform: capitalize;
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.single .entry-author .author-info h3{
+	margin-bottom: 15px;
+}
+
+.has-medium-gray-color{
+  color: #999;
 }
