@@ -41,7 +41,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 			'singular_name' => 'Commentary',
 		),
 		'public'		=> true,
-		'supports'	=> array( 'title', 'editor', 'author' )
+		'supports'	=> array( 'title', 'editor', 'author', 'excerpt' )
 	);
 
 	return $post_types;
