@@ -18,7 +18,7 @@
               <?php
 
                 $user_links = array(
-                  'user_url'  => 'Website'
+                  'user_url'  => '<i class="fa fa-globe"></i>&nbsp;Website'
                 );
 
                 _e( "<ul class='list-inline text-muted small'>" );
