@@ -18,7 +18,8 @@
               <?php
 
                 $user_links = array(
-                  'user_url'  => '<i class="fa fa-globe"></i>&nbsp;Website'
+                  'user_url'          => '<i class="fa fa-globe"></i>&nbsp;Website',
+                  'tsf_facebook_page' => '<i class="fab fa-facebook"></i>&nbsp;Facebook'
                 );
 
                 _e( "<ul class='list-inline text-muted small'>" );
