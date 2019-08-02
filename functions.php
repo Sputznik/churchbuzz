@@ -5,14 +5,14 @@
 add_theme_support( 'post-thumbnails' );
 
 //Constant changes all the js and css version on the go
-define( 'CHURCHBUZZ_VERSION', '1.0.5' );
+define( 'CHURCHBUZZ_VERSION', '1.1.1' );
 
 
 //Load child stylesheet after parent stylesheet
 add_action('wp_enqueue_scripts', function(){
 
   // LOAD THE CHILD THEME CSS
-  wp_enqueue_style( 'churchbuzz', get_stylesheet_directory_uri() .'/assets/css/style.css', array( 'sp-core-style' ), CHURCHBUZZ_VERSION );
+  wp_enqueue_style( 'churchbuzz', get_stylesheet_directory_uri() .'/assets/css/style.css', array( 'sp-core-style' ), CHURCHBUZZ_VERSION, true );
 
   // VALIDATION ON THE FORM
   //wp_enqueue_script( 'soah-main', get_stylesheet_directory_uri().'/assets/js/form.js', array(), CHURCHBUZZ_VERSION, true );
