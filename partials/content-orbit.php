@@ -3,9 +3,7 @@
   <div class="orbit-author">
     <a href="<?php the_permalink();?>"><?php _e( do_shortcode( '[orbit_avatar]' ) );?></a>
     <div class="orbit-author-meta">
-      <a href="<?php the_permalink();?>">
-        <?php _e( do_shortcode( '[orbit_author]' ) );?>
-      </a>
+      <?php the_author_link();?>
       <br><?php _e( do_shortcode( '[orbit_date]' ) );?>
     </div>
   </div>
