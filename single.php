@@ -21,7 +21,7 @@
                   'user_url'  => 'Website'
                 );
 
-                _e( "<ul class='list-inline'>" );
+                _e( "<ul class='list-inline text-muted small'>" );
                 foreach ( $user_links as $key => $label ) {
                   $link = get_the_author_meta( $key );
                   if( $link ){
