@@ -13,7 +13,7 @@
           <div class="author-info">
             <a href="<?php the_permalink();?>"><?php _e( do_shortcode( '[orbit_avatar size=100]' ) );?></a>
             <div class="orbit-author-meta">
-              <h3><a href="<?php the_permalink();?>"><?php _e( do_shortcode( '[orbit_author]' ) );?></a></h3>
+              <h3><?php the_author_link();?></h3>
               <p><?php _e( get_user_meta( $post->post_author, 'description', true ) );?></p>
             </div>
           </div>
