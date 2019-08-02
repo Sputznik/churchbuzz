@@ -1,9 +1,11 @@
 <?php _e( do_shortcode( '[orbit_thumbnail_bg size="full"]' ) );?>
 <div class="orbit-post-content">
   <div class="orbit-author">
-    <a href="<?php the_permalink();?>"><?php _e( do_shortcode( '[orbit_avatar]' ) );?></a>
+    <a href="<?php _e( do_shortcode( '[orbit_author_link]' ) );?>"><?php _e( do_shortcode( '[orbit_avatar]' ) );?></a>
     <div class="orbit-author-meta">
-      <?php the_author_link();?>
+      <a href="<?php _e( do_shortcode( '[orbit_author_link]' ) );?>">
+        <?php _e( do_shortcode( '[orbit_author]' ) );?>
+      </a>
       <br><?php _e( do_shortcode( '[orbit_date]' ) );?>
     </div>
   </div>
