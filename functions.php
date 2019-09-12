@@ -44,23 +44,63 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'supports'	=> array( 'title', 'editor', 'author', 'excerpt' )
 	);
 
-	return $post_types;
-} );
-
-add_filter( 'orbit_post_type_vars', function( $post_types ){
-
-	$post_types['churches'] = array(
+  $post_types['churches'] = array(
 		'slug' 		=> 'churches',
 		'labels'	=> array(
 			'name' 					=> 'Churches',
 			'singular_name' => 'Church',
 		),
+    'menu_icon'	=> 'dashicons-art',
 		'public'		=> true,
 		'supports'	=> array( 'title', 'editor', 'thumbnail' )
 	);
 
+
 	return $post_types;
 } );
+
+add_filter( 'orbit_taxonomy_vars', function( $taxonomies ){
+
+	$taxonomies['church-type']	= array(
+		'label'			=> 'Church Type',
+		'slug' 			=> 'church-type',
+		'post_types'	=> array( 'churches' )
+	);
+
+	$taxonomies['location']	= array(
+		'label'			=> 'Location',
+		'slug' 			=> 'location',
+		'post_types'	=> array( 'churches' )
+	);
+
+	return $taxonomies;
+
+} );
+
+add_filter( 'orbit_meta_box_vars', function( $meta_box ){
+	$meta_box['churches'] = array(
+		array(
+			'id'			=> 'churches-meta-fields',
+			'title'		=> 'Additional Fields',
+			'fields'	=> array(
+				'website' => array(
+					'type' => 'text',
+					'text' => 'Website'
+				),
+				'address' => array(
+					'type' => 'textarea',
+					'text' => 'Address'
+				),
+				'map' => array(
+					'type' => 'textarea',
+					'text' => 'Map'
+				),
+			)
+		)
+	);
+	return $meta_box;
+});
+
 
 /*
 
