@@ -395,3 +395,8 @@ h2.section-heading{
 }
 
 .search-content .articles-results .orbit-post-content{ background: #fff; }
+
+body.home .cb-churches .sp-post{
+  background: #333;
+  color: #fff;
+}

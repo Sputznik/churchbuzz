@@ -5,7 +5,7 @@
 add_theme_support( 'post-thumbnails' );
 
 //Constant changes all the js and css version on the go
-define( 'CHURCHBUZZ_VERSION', '1.1.7' );
+define( 'CHURCHBUZZ_VERSION', '1.1.8' );
 
 
 //Load child stylesheet after parent stylesheet
