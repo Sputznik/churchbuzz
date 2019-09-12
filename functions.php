@@ -5,7 +5,7 @@
 add_theme_support( 'post-thumbnails' );
 
 //Constant changes all the js and css version on the go
-define( 'CHURCHBUZZ_VERSION', '1.1.4' );
+define( 'CHURCHBUZZ_VERSION', '1.1.5' );
 
 
 //Load child stylesheet after parent stylesheet
@@ -139,6 +139,12 @@ function cb_city_guides_html( $terms ){
     _e( '</ul>' );
   }
 }
+
+add_shortcode( 'cb_searchform', function( $atts ){
+  ob_start();
+  include('partials/searchform.php');
+  return ob_get_clean();
+} );
 
 /*
 

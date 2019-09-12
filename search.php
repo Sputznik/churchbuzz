@@ -3,7 +3,7 @@
 <div class="search-content">
 
   <div class="container">
-    <?php get_search_form();?>
+    <?php echo do_shortcode( '[cb_searchform]' );?>
   </div>
 
   <?php $search_terms = cb_get_terms_by_search( get_search_query() ); if( is_array( $search_terms ) && count( $search_terms ) ):?>
