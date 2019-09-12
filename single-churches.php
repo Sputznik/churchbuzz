@@ -27,7 +27,7 @@
   <div class="container">
     <div class="col-sm-12">
       <h1>Nearby Churches</h1>
-      <?php echo $related_churches; ?>
+      <?php echo $related_churches;?>
     </div>
   </div>
 </div>
