@@ -19,6 +19,13 @@ add_action('wp_enqueue_scripts', function(){
 
 });
 
+// Exclude pages & cafe from WordPress Search
+add_filter( 'pre_get_posts', function( $query ){
+  if ( !$query->is_admin && $query->is_main_query() && $query->is_search ) {
+    $query->set( 'post_type', array( 'post' ) );
+	}
+	return $query;
+} );
 
 
 //Add google crimson text font
