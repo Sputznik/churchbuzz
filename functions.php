@@ -5,7 +5,7 @@
 add_theme_support( 'post-thumbnails' );
 
 //Constant changes all the js and css version on the go
-define( 'CHURCHBUZZ_VERSION', '1.1.6' );
+define( 'CHURCHBUZZ_VERSION', '1.1.7' );
 
 
 //Load child stylesheet after parent stylesheet
@@ -107,6 +107,28 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 	);
 	return $meta_box;
 });
+
+add_shortcode( 'cb_locations', function( $atts ){
+
+  $atts = shortcode_atts( array(
+    'number'  => 0
+    ), $atts, 'icc_city_guides'
+  );
+
+  ob_start();
+
+  $terms = get_terms( array(
+    'taxonomy'    => 'location',
+    'hide_empty'  => false,
+    'parent'      => 0,
+    'number'      => $atts['number']
+  ) );
+
+  cb_city_guides_html( $terms );
+
+  return ob_get_clean();
+
+} );
 
 // Get a list taxonomies on the search box
 function cb_get_terms_by_search( $search_text, $taxonomy = 'location' ){
