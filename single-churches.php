@@ -34,33 +34,5 @@
 <?php endif; ?>
 <?php get_footer();?>
 <style>
-  .single-churches .header3{ min-height: 50px; }
-
-  .church-info{
-    padding: 50px 0;
-  }
-  .btn-church.btn-default{
-    border: #333 solid 1px;
-    color: #333;
-    background: transparent;
-    border-radius: 0;
-    font-size: 20px;
-    padding: 12px 25px;
-  }
-  .btn-church.btn-default:hover{
-    background: #333;
-    color: #fff;
-  }
-  .church-map iframe{ max-width: 100%; }
-  @media( min-width: 960px ){
-    .church-map{
-      margin-top: -150px;
-    }
-  }
-  .related-churches{
-    padding: 50px 0;
-    background: #eee;
-  }
-  .related-churches h1{ margin-bottom: 30px; text-align: center; }
-  .related-churches .cb-churches .sp-post{ background: #fff; }
+  
 </style>
