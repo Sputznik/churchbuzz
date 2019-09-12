@@ -47,8 +47,9 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 	return $post_types;
 } );
 
-add_action( 'widgets_init', function(){
+/*
 
+add_action( 'widgets_init', function(){
   register_sidebar( array(
     'name' => 'Footer Sidebar 1',
     'id' => 'footer1-sidebar',
@@ -92,3 +93,4 @@ add_action( 'sp_pre_footer', function(){
   </div>
   <?php
 } );
+*/
