@@ -359,3 +359,11 @@ h3{ font-weight: bold; }
 .related-churches h1{ margin-bottom: 30px; text-align: center; }
 .related-churches .cb-churches .sp-post{ background: #fff; }
 /* CHURCHES */
+
+h2.section-heading{
+  font-weight: 700;
+  margin: 30px 0;
+  padding-bottom: 20px;
+  border-bottom: #333 solid 2px;
+  display: inline-block;
+}

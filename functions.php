@@ -101,6 +101,37 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 	return $meta_box;
 });
 
+// Get a list taxonomies on the search box
+function cb_get_terms_by_search( $search_text, $taxonomy = 'location' ){
+  $args = array(
+      'taxonomy'      => array( $taxonomy ),
+      'orderby'       => 'id',
+      'order'         => 'ASC',
+      'hide_empty'    => true,
+      'fields'        => 'all',
+      'name__like'    => $search_text
+  );
+  $terms = get_terms( $args );
+  return $terms;
+}
+
+add_shortcode( 'cb_section_heading', function( $atts ){
+  ob_start();
+  _e( "<h2 class='section-heading'>" . $atts['title'] . "</h2>" );
+  return ob_get_clean();
+} );
+
+function cb_city_guides_html( $terms ){
+  if( count( $terms ) ){
+    _e( '<ul class="list-unstyled cb-churches">' );
+    foreach( $terms as $term ){
+      _e( '<li class="sp-post">' );
+      include( 'partials/location-grid.php' );
+      _e( '</li>' );
+    }
+    _e( '</ul>' );
+  }
+}
 
 /*
 
