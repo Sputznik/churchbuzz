@@ -14,7 +14,7 @@
       <h3>Address</h3>
       <?php echo do_shortcode('[orbit_cf id="address"]');?>
       <?php $website = do_shortcode('[orbit_cf id="website"]');if( $website ):?>
-      <p style="margin-top: 20px; "><a href="<?php _e( $website );?>" class="btn btn-default btn-church">Website</a></p>
+      <p style="margin-top: 20px; "><a target="_blank" href="<?php _e( $website );?>" class="btn btn-default btn-church">Website</a></p>
       <?php endif; ?>
     </div>
     <div class="col-sm-6 col-sm-offset-1 church-map">
@@ -25,7 +25,7 @@
 <?php get_footer();?>
 <style>
   .single-churches .header3{ min-height: 50px; }
-  
+
   .church-info{
     padding: 50px 0;
   }
