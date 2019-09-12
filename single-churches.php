@@ -51,6 +51,7 @@
     background: #333;
     color: #fff;
   }
+  .church-map iframe{ max-width: 100%; }
   @media( min-width: 960px ){
     .church-map{
       margin-top: -150px;

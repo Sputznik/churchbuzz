@@ -302,7 +302,7 @@ h3{ font-weight: bold; }
 .cb-churches{
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 .cb-churches .sp-post{
   background: #eee;
@@ -323,5 +323,9 @@ h3{ font-weight: bold; }
   text-align: center;
   width: 80%;
 }
-
+@media(min-width: 768px ){
+  .cb-churches{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 /* CHURCHES */
