@@ -1,8 +1,8 @@
 <?php get_header();?>
-<div class='church-header'>
+<div class='overlay-header'>
   <div class="container">
     <div class="row">
-      <div class="col-sm-7">
+      <div class="col-sm-6">
         <h1><?php the_title();?></h1>
       </div>
     </div>
@@ -25,11 +25,7 @@
 <?php get_footer();?>
 <style>
   .single-churches .header3{ min-height: 50px; }
-  .church-header{
-    background: #333;
-    padding: 120px 0;
-    color: #fff;
-  }
+  
   .church-info{
     padding: 50px 0;
   }

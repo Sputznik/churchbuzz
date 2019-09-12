@@ -292,3 +292,36 @@ h3{ font-weight: bold; }
 .has-medium-gray-color{
   color: #999;
 }
+
+/* CHURCHES */
+.overlay-header{
+  background: #333;
+  padding: 120px 0;
+  color: #fff;
+}
+.cb-churches{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.cb-churches .sp-post{
+  background: #eee;
+  min-height: 200px;
+  position: relative;
+}
+.cb-churches .sp-post-desc, .cb-churches .sp-post a[href]{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cb-churches .sp-post-desc h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  text-align: center;
+  width: 80%;
+}
+
+/* CHURCHES */
