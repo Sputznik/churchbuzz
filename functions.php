@@ -112,7 +112,7 @@ add_shortcode( 'cb_locations', function( $atts ){
 
   $atts = shortcode_atts( array(
     'number'  => 0
-    ), $atts, 'icc_city_guides'
+    ), $atts, 'cb_locations'
   );
 
   ob_start();
