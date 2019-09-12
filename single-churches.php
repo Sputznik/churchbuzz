@@ -22,6 +22,16 @@
     </div>
   </div>
 </div>
+<?php $related_churches = do_shortcode('[orbit_related_query taxonomy="location" posts_per_page="3" style="churches"]'); if( $related_churches ):?>
+<div class="related-churches">
+  <div class="container">
+    <div class="col-sm-12">
+      <h1>Nearby Churches</h1>
+      <?php echo $related_churches; ?>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
 <?php get_footer();?>
 <style>
   .single-churches .header3{ min-height: 50px; }
@@ -46,5 +56,10 @@
       margin-top: -150px;
     }
   }
-
+  .related-churches{
+    padding: 50px 0;
+    background: #eee;
+  }
+  .related-churches h1{ margin-bottom: 30px; text-align: center; }
+  .related-churches .cb-churches .sp-post{ background: #fff; }
 </style>
