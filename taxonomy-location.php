@@ -1,5 +1,4 @@
 <?php get_header();?>
-<?php $term = $wp_query->get_queried_object();$image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '', array( 'image_size' => 'full' ) );?>
 <div class='overlay-header'>
   <div class="container">
     <div class="row">
