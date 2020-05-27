@@ -182,16 +182,6 @@
 /* Single-videos */
 .single-videos .single-template-3 article{margin-top: 0;}
 .single-videos .single-template-3 .entry-author h1{ font-size: 26px; }
-.single-videos h1.title-font{ margin-top:0;margin-bottom: 20px;}
-
-.title-font{
-  font-family: "Montserrat", sans-serif;
-  color: #000;
-  font-size: 28px;
-  line-height: 1.2;
-  font-weight: bold;
-}
-
 .single-videos .author-snippet {margin-bottom: 0;}
 .single-videos .author-snippet {
   display: grid;
@@ -248,7 +238,6 @@
     font-size: 22px;
   }
   /* Single Videos */
-  .title-font,
   .single-videos .single-template-3 .entry-author h1{font-size: 36px;}
   /* Single Videos */
 }

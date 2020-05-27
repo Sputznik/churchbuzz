@@ -5,7 +5,7 @@
     <div class="col-sm-12">
       <?php if (have_posts()) : while (have_posts()) : the_post(); global $post;?>
       <article <?php post_class();?>>
-        <h1 class="entry-title title-font"><?php the_title();?></h1>
+        <header class="entry-header"><h1 class="entry-title"><?php the_title();?></h1></header>
         <div class="author-snippet">
         	<div class="author-details">
             <a class="author-name" href="<?php _e( do_shortcode( '[orbit_author_link]' ) );?>">
