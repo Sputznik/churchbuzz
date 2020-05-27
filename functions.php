@@ -5,7 +5,7 @@
 add_theme_support( 'post-thumbnails' );
 
 //Constant changes all the js and css version on the go
-define( 'CHURCHBUZZ_VERSION', '1.1.12' );
+define( 'CHURCHBUZZ_VERSION', '1.1.13' );
 
 
 //Load child stylesheet after parent stylesheet
@@ -74,7 +74,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		),
     'menu_icon'	=> 'dashicons-video-alt3',
 		'public'		=> true,
-		'supports'	=> array( 'title', 'editor', 'thumbnail','comments' )
+		'supports'	=> array( 'title', 'editor', 'thumbnail','comments','excerpt' )
 	);
 
 	return $post_types;

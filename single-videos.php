@@ -6,14 +6,7 @@
       <?php if (have_posts()) : while (have_posts()) : the_post(); global $post;?>
       <article <?php post_class();?>>
         <header class="entry-header"><h1 class="entry-title"><?php the_title();?></h1></header>
-        <div class="author-snippet">
-        	<div class="author-details">
-            <a class="author-name" href="<?php _e( do_shortcode( '[orbit_author_link]' ) );?>">
-              By <?php _e( do_shortcode( '[orbit_author]' ) );?>
-            </a>
-        	</div>
-        	<div class="post-date"><?php _e( do_shortcode( '[orbit_date]' ) );?></div>
-        </div>
+        <div class="entry-summary"><?php _e( do_shortcode( '[orbit_excerpt]' ) );?></div>
         <div class="post-thumbnail">
           <?php
             $video_url = get_post_meta( $post->ID, 'video_url', true );
