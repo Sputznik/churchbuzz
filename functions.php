@@ -62,6 +62,20 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'supports'	=> array( 'title', 'editor', 'thumbnail' )
 	);
 
+  $post_types['videos'] = array(
+		'slug' 		=> 'videos',
+		'labels'	=> array(
+			'name' 					=> 'Videos',
+			'singular_name' => 'Video',
+      'add_new'       => 'Add New Video',
+      'edit_item'			=> 'Edit Video',
+      'add_new_item'  => 'Add New Video',
+      'all_items'     => 'All Videos'
+		),
+    'menu_icon'	=> 'dashicons-video-alt3',
+		'public'		=> true,
+		'supports'	=> array( 'title', 'editor', 'thumbnail' )
+	);
 
 	return $post_types;
 } );
@@ -78,6 +92,12 @@ add_filter( 'orbit_taxonomy_vars', function( $taxonomies ){
 		'label'			=> 'Location',
 		'slug' 			=> 'location',
 		'post_types'	=> array( 'churches' )
+	);
+
+  $taxonomies['video-category']	= array(
+		'label'			=> 'Video Category',
+		'slug' 			=> 'video-category',
+		'post_types'	=> array( 'videos' )
 	);
 
 	return $taxonomies;
@@ -105,6 +125,18 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 			)
 		)
 	);
+  $meta_box['videos'] = array(
+    array(
+      'id'			=> 'video-metafields',
+      'title'		=> 'Additional Information',
+      'fields'	=> array(
+        'video_url'	=> array(
+          'type' => 'text',
+          'text' => 'Youtube Video Url'
+        ),
+      )
+    )
+  );
 	return $meta_box;
 });
 
