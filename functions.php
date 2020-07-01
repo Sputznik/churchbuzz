@@ -74,7 +74,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		),
     'menu_icon'	=> 'dashicons-video-alt3',
 		'public'		=> true,
-		'supports'	=> array( 'title', 'editor', 'thumbnail','comments','excerpt' )
+		'supports'	=> array( 'title', 'editor', 'thumbnail','comments','excerpt', 'author' )
 	);
 
 	return $post_types;
