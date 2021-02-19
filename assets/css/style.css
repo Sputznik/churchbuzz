@@ -142,54 +142,6 @@
 
 /* SINGLE POST STYLES */
 
-
-/* ORBIT VIDEO-GRID */
-.articles-video .post-video{display: block;}
-.articles-video	.video-thumb{
-  min-height: 350px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.articles-video .video-desc{
-	position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba( 0,0,0,0.6 );
-}
-.articles-video .play-btn {
-  color: #fff;
-  font-size: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.articles-video .title {
-  position: absolute;
-  left: 5%;
-  bottom: 2%;
-  height: 128px;
-  width: 70%;
-  font-size: 29px;
-  color: #fff;
-  font-weight: bold;
-  margin: 0;
-  overflow: hidden;
-}
-/* ORBIT VIDEO-GRID */
-
-/* Single-videos */
-.single-videos .single-template-3 article{margin-top: 0;}
-.single-videos .youtube-frame iframe{min-height:420px;width:100%;border:none;}
-/* Similar Videos */
-.similar-videos{margin-bottom: 50px;}
-/* Similar Videos */
-
-/* Single-videos */
-
-
-
 /* USERS GRID */
 .users-grid{
   display: grid;
@@ -283,7 +235,6 @@
   .articles-grid .orbit-article{
     margin-bottom: 30px;
   }
-  .articles-video .orbit-article:last-child{margin-bottom: 0;}
 
   .single .entry-header h1{
     font-size: 36px;
@@ -442,4 +393,3 @@ body.home .cb-churches .sp-post{
   background: #333;
   color: #fff;
 }
-@media(max-width: 375px){.single-videos .youtube-frame iframe{min-height:220px;}}
