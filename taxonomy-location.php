@@ -1,5 +1,12 @@
-<?php get_header();?>
-<div class='overlay-header'>
+<?php
+get_header();
+$location           = get_queried_object();
+$location_image_url = get_term_meta( $location->term_id, 'cbt_location_image', true);
+?>
+<div class='overlay-header' <?php if( !empty( $location_image_url ) ){ echo 'style="background-image:url('.$location_image_url.');"'; }?>>
+  <?php if( !empty( $location_image_url ) ): ?>
+    <div class="location-overlay"></div>
+  <?php endif;?>
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">

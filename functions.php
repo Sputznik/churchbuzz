@@ -5,8 +5,10 @@
 add_theme_support( 'post-thumbnails' );
 
 //Constant changes all the js and css version on the go
-define( 'CHURCHBUZZ_VERSION', '1.1.15' );
+define( 'CHURCHBUZZ_VERSION', '1.1.16' );
 
+// INCLUDE FILES
+require_once( 'lib/class-cbt-taxonomy-location.php' );
 
 //Load child stylesheet after parent stylesheet
 add_action('wp_enqueue_scripts', function(){
@@ -166,6 +168,25 @@ add_shortcode( 'cb_searchform', function( $atts ){
   ob_start();
   include('partials/searchform.php');
   return ob_get_clean();
+} );
+
+add_shortcode( 'cb_locations_grid', function( $atts ){
+  $atts = shortcode_atts( array(
+    'number'  => 0
+    ), $atts, 'cb_locations_grid'
+  );
+
+  $terms = get_terms( array(
+    'taxonomy'    => 'location',
+    'hide_empty'  => false,
+    'parent'      => 0,
+    'number'      => $atts['number']
+  ) );
+
+  ob_start();
+  include( 'partials/cb-locations-grid.php' );
+  return ob_get_clean();
+
 } );
 
 /*

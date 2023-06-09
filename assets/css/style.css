@@ -393,3 +393,34 @@ body.home .cb-churches .sp-post{
   background: #333;
   color: #fff;
 }
+
+/* TAXONOMY LOCATION */
+.cb-location-grid .sp-post.cb-location-image,
+.tax-location .overlay-header {
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.tax-location .location-overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.tax-location .location-overlay,
+.cb-location-grid .sp-post .location-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+/* CB LOCATION GRID */
+.cb-location-grid .sp-post-desc h3 {
+  text-transform: uppercase;
+}
+
+.cb-location-grid .sp-post a[href] {
+  position: absolute;
+}
